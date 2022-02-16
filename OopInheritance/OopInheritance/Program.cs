@@ -6,6 +6,11 @@ namespace OopInheritance
     {
         static void Main(string[] args)
         {
+            // works
+            ChildClass.Test();
+            // but is better to use:
+            BaseClassWithStaticMember.Test();
+
             ExcelFile paycheck = new ExcelFile("Paycheck", "Excel 2019");
             // general functionality available for all files
             paycheck.Open();
