@@ -6,6 +6,10 @@ namespace OopInheritance
     {
         static void Main(string[] args)
         {
+            ConcreteClass obj = new ConcreteClass();
+            obj.GeneralFunctionality();
+
+            /*
             // works
             ChildClass.Test();
             // but is better to use:
@@ -26,6 +30,7 @@ namespace OopInheritance
             Console.WriteLine("-----------------------------------");
 
             OpenFiles(paycheck, book);
+            */
         }
 
         private static void OpenFiles(params File[] files)
